@@ -9,6 +9,7 @@ import About from './pages/About'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import AboutLink from './components/AboutLink'
 import { FeedbackProvider } from './context/FeedbackContext'
+import Loading from './components/Loading'
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
                 <FeedbackForm />
                 <FeedbackStats />
                 <FeedbackList />
+                <Loading />
               </>
             } >
             </Route>
